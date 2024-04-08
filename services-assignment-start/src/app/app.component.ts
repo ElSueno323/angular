@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {UsersService} from "./users.service";
+import {CounterService} from "./counter.service";
 
 @Component({
   selector: 'app-root',
@@ -11,6 +12,5 @@ export class AppComponent {
   inactiveUsers = ['Chris', 'Manu'];
 
 
-  constructor(private users: UsersService) {
-  }
+  constructor(private usersService: UsersService , private counterService: CounterService) {}
 }
